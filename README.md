@@ -69,7 +69,7 @@ boolean isPortraite = detector.isPortrait();
  * 90 for landscape
  * 180 for reverse-landscape
 */
-    int rotateValue = detector.getRotateValue();
+int rotateValue = detector.getRotateValue();
 ```
 ### Hint : never try to get the values in `onCreate()`
 ## Contributing
