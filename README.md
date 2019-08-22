@@ -65,9 +65,9 @@ boolean isPortraite = detector.isPortrait();
 ### in case you need to know the degree of rotation :
 ```java
 /* 0 for portrait
- * 270 for reverse-portrait
+ * 180 for reverse-portrait
  * 90 for landscape
- * 180 for reverse-landscape
+ * 270 for reverse-landscape
 */
 int rotateValue = detector.getRotateValue();
 ```
