@@ -12,9 +12,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        detector = new OrientationDetector(this);
+
+        detector = new OrientationDetector(this) {
+            @Override
+            protected void onRotateChanged(int startDeg, int endDeg) {
+                // action to added here
+            }
+        };
 
         boolean isPortraite = detector.isPortrait();
+
         int rotateValue = detector.getRotateValue();
     }
 
