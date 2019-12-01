@@ -24,7 +24,7 @@ allprojects {
 
 ```
 dependencies {
-	  implementation 'com.github.MoustafaElsaghier:OrientationDetector:0.2.0'
+	  implementation 'com.github.MoustafaElsaghier:OrientationDetector:0.2.1'
 }
 ```
 
