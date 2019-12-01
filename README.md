@@ -24,7 +24,7 @@ allprojects {
 
 ```
 dependencies {
-	  implementation 'com.github.MoustafaElsaghier:OrientationDetector:0.1.0'
+	  implementation 'com.github.MoustafaElsaghier:OrientationDetector:0.2.0'
 }
 ```
 
@@ -36,7 +36,12 @@ OrientationDetector detector;
 ```
 2- in `onCreate()` method init it :
 ```
-detector = new OrientationDetector(this);
+detector = new OrientationDetector(this) {
+   @Override
+   protected void onRotateChanged(int startDeg, int endDeg) {
+      // action to added here
+   }
+};
 ```
 3- in `onStart()` method enable the listner :
 
